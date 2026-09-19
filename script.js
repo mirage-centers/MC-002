@@ -27,7 +27,7 @@ videoEl.addEventListener("contextmenu", (e) => {
 });
 
 // Sélection quotidienne (via localStorage)
-const STORAGE_KEY = "mirageCentersDailySelection";
+const STORAGE_KEY = "mirageCentersDailySelection_" + location.pathname.replace(/[^a-zA-Z0-9]/g, "_");
 
 function getTodayKey() {
   const now = new Date();
